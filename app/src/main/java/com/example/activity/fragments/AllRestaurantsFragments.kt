@@ -2,6 +2,7 @@ package com.example.activity.fragments
 
 import android.app.Activity
 import android.app.AlertDialog
+
 import android.app.SearchManager
 import android.content.Context
 import android.content.Intent
@@ -11,7 +12,6 @@ import android.view.*
 import android.widget.FrameLayout
 import android.widget.ProgressBar
 import android.widget.RelativeLayout
-import androidx.fragment.app.Fragment
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.core.app.ActivityCompat
@@ -35,7 +35,7 @@ import kotlin.math.cos
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class AllRestaurantsFragments : Fragment() {
+class AllRestaurantsFragments : androidx.fragment.app.Fragment() {
 
     private var param1: String? = null
     private var param2: String? = null

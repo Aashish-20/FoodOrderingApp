@@ -71,7 +71,6 @@ class LoginActivity : AppCompatActivity() {
                         Response.Listener {
 
                             try {
-
                                 val data = it.getJSONObject("data")
                                 val success = data.getBoolean("success")
 
